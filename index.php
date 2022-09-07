@@ -10,6 +10,7 @@
             
             <form action="verification.php" method="POST">
                 <h1>Connexion</h1>
+                <a href=""><h1>inscription</h1></a>
                 
                 <label><b>Nom d'utilisateur</b></label>
                 <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
