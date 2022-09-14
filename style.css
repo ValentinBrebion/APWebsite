@@ -1,0 +1,25 @@
+.txtconnexion{
+    text-align: center;
+}
+body{
+    background-color: #3C61F6;
+}
+.txtinscription{
+    text-align: center;
+    color: white;
+}
+a:link{
+    text-decoration:none;
+}
+.contour{
+    text-align: center;
+    margin-top: 200;
+}
+.namemdp{
+    margin-top: 30px;
+}
+.btnsub{
+    margin-top: 20px;
+    padding:10px;
+    border-radius: 5px;
+}
