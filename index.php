@@ -14,13 +14,16 @@
                 
                 <div class="contour">
                 
+                
                 <label><b>Nom d'utilisateur</b></label>
-                <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
-
+                <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required><br>
+                
+                <div class="namemdp">
                 <label><b>Mot de passe</b></label>
-                <input type="password" placeholder="Entrer le mot de passe" name="password" required>
+                <input type="password" placeholder="Entrer le mot de passe" name="password" required><br>
+                </div>
 
-                <input type="submit" id='submit' value='LOGIN' >
+                <input type="submit" class="btnsub" id='submit' value='LOGIN' >
                 </div>
                 <?php
                 // Code de vérification 
