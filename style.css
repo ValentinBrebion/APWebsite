@@ -1,8 +1,13 @@
+/*PARTIE CONNEXION CSS*/
 .txtconnexion{
     text-align: center;
 }
 body{
-    background-color: #3C61F6;
+    background-image: url(img/nolan.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
 }
 .txtinscription{
     text-align: center;
@@ -23,3 +28,12 @@ a:link{
     padding:10px;
     border-radius: 5px;
 }
+
+/*FIN PARTIE CONNEXION CSS*/
+/*Début PARTIE INSCRIPTION CSS*/
+
+
+
+
+
+/*FIN PARTIE INSCRIPTION CSS*/

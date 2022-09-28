@@ -42,7 +42,7 @@
    </div>
  </div>';
          
-             
+                  header("Refresh: 3; url=inscription.php");
  
          }else{
              echo '<div class="card mx-auto" style="width: 18rem;">
