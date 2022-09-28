@@ -15,7 +15,6 @@ session_start();
     $dbname = 'tpslam3versioning';
     $username = 'root';
     $password = '';
-
     try{
         $conn = new PDO("mysql:host=$servername;dbname=$dbname",$username,$password);
         

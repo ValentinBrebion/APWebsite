@@ -52,7 +52,7 @@
     
    </div>
  </div>';
-       
+       header("Refresh: 3; url=main.php");
            
          }
  
