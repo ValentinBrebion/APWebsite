@@ -25,12 +25,22 @@ session_start();
         $timestamp = strtotime($dateauj); 
         $newDate = date("Y-m-d", $timestamp);
 
+        $select = $conn->prepare("SELECT LoginUser FROM utilisateur");
+        $select->execute();
 
-
-        $requete = $conn->prepare("INSERT INTO utilisateur VALUES(NULL,?,PASSWORD(?),?)");
+        if($select == $login){ // si nom utilisateur est le meme dans BDD
+          echo '<div class="card mx-auto" style="width: 18rem;">
+   <div class="card-body">
+     <h5 class="card-title">INFORMATION</h5>
+     <p class="card-text">Insertion faites dans la BDD Veuillez patienter, vous allez être redirigé...</p>
+    
+   </div>
+ </div>';//tu affiches non
+        }else{//sinon oui
+          $requete = $conn->prepare("INSERT INTO utilisateur VALUES(NULL,?,PASSWORD(?),?)");
+          $requete->execute([$login,$pass,$newDate]);
 
        
-        $requete->execute([$login,$pass,$newDate]);
 
         if($requete){
         
@@ -53,12 +63,17 @@ session_start();
 
           header("Refresh: 5; url=inscritpion.php");
           }
+        }
+
+      
+
+       
+        
           
         
 
     }catch(PDOException $e){
-        echo "Erreur".$e->getMessage();
-        die;
+        
     }
 
 ?>
