@@ -6,14 +6,15 @@
         <!-- CSS only -->
     </head>
     <body>
-        <div id="container">
+        <div id="container" >
             <!-- zone de connexion -->
-            
+            <div class="menuconninscri">
             <form action="verification.php" method="POST">
                 <h1 class="txtconnexion">Connexion</h1>
                 <a href="inscription.php"><h1 class="txtinscription">inscription</h1></a>
+</div>
                 
-                <div class="contour">
+                <div class="containerconn">
                 
                 
                 <label><b>Nom d'utilisateur</b></label>

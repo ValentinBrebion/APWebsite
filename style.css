@@ -28,7 +28,21 @@ a:link{
     padding:10px;
     border-radius: 5px;
 }
-
+.containerconn{
+    margin: auto;
+    padding: 20px;;
+    border: 1px solid black;
+    text-align: center;
+    height: 200px;
+    font-size: 50px;
+}
+.menuconninscri{
+    display: grid;
+    align-content: space-between;
+}
+.white{
+    color:white;
+}
 /*FIN PARTIE CONNEXION CSS*/
 /*Début PARTIE INSCRIPTION CSS*/
 
