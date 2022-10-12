@@ -8,7 +8,7 @@
 
     </head>
    </html> 
-<?= 
+<?php
 session_start();
 
     $servername = 'localhost';
@@ -20,6 +20,7 @@ session_start();
         
         $login=strip_tags($_POST['login']);
         $pass=strip_tags($_POST['password']);
+        $mail = strip_tags($_POST['Email']);
         $dateauj = date('d-m-Y');
 
         $timestamp = strtotime($dateauj); 
@@ -32,13 +33,15 @@ session_start();
           echo '<div class="card mx-auto" style="width: 18rem;">
    <div class="card-body">
      <h5 class="card-title">INFORMATION</h5>
-     <p class="card-text">Insertion faites dans la BDD Veuillez patienter, vous allez être redirigé...</p>
+     <p class="card-text">Login déjà pris !</p>
     
    </div>
  </div>';//tu affiches non
+
+ header("Refresh:3; url=inscription.php");
         }else{//sinon oui
-          $requete = $conn->prepare("INSERT INTO utilisateur VALUES(NULL,?,PASSWORD(?),?)");
-          $requete->execute([$login,$pass,$newDate]);
+          $requete = $conn->prepare("INSERT INTO utilisateur VALUES(NULL,?,PASSWORD(?),?,?)");
+          $requete->execute([$login,$pass,$newDate,$mail]);
 
        
 

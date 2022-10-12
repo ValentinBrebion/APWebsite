@@ -2,6 +2,7 @@
     <head>
        <meta charset="utf-8">
         <!-- importer le fichier de style -->
+        
         <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
         <!-- CSS only -->
     </head>
@@ -33,6 +34,7 @@
                 </div>
 
                 <input type="submit" class="btnsub" id='submit' value='LOGIN' >
+                
                 </div>
                 <?php
                 // Code de vérification 

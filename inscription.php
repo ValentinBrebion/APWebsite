@@ -22,6 +22,11 @@
                 <input type="password" placeholder="Entrer votre mot de passe" name="password" required><br>
                 </div>
 
+                <div class="namemdp">
+                <label><b>Adresse Mail</b></label>
+                <input type="text" placeholder="Entrer votre Email" name="Email" required><br>
+                </div>
+
                 <input type="submit" class="btnsub" id='submit' value='LOGIN' >
                 </div>
                 <?php

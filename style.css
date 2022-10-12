@@ -19,6 +19,12 @@ a:link{
 .contour{
     text-align: center;
     margin-top: 200;
+    background-color: #D84315;
+    font-size: 30px;
+    padding: 50px;
+    width: 50%;
+    margin: auto;
+    margin-top: 10%;
 }
 .namemdp{
     margin-top: 30px;
@@ -35,6 +41,9 @@ a:link{
     text-align: center;
     height: 200px;
     font-size: 50px;
+    background-color: #ffbf00;
+    width:50%;
+    margin-top: 5%;;
 }
 .menuconninscri{
     display: grid;
